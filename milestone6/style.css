@@ -1,3 +1,5 @@
+/* ===== MILESTONE 6: MOBILE IMPLEMENTATION ===== */
+
 :root {
   --dark-navy: #1a1a2e;
   --blue-gray: #16213e;
@@ -32,13 +34,13 @@ a {
   color: var(--white);
 }
 
+/* ===== MAIN PAGE GRID ===== */
 .page-grid {
   display: grid;
   grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
 }
 
-/* HEADER */
-
+/* ===== HEADER ===== */
 .header {
   grid-column: 1 / -1;
   background-color: var(--blue-gray);
@@ -71,14 +73,13 @@ a {
   font-size: 16px;
 }
 
-/* HERO */
-
+/* ===== HERO ===== */
 .hero {
   grid-column: 1 / -1;
   min-height: 400px;
   background-image:
     linear-gradient(rgba(15, 52, 96, 0.6), rgba(15, 52, 96, 0.6)),
-    url("https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1600&q=80");
+    url("images/final_se_1400_photo.avif");
   background-size: cover;
   background-position: center;
 }
@@ -134,16 +135,13 @@ a {
   background-color: transparent;
 }
 
-/* MAIN CONTENT */
-
+/* ===== MAIN CONTENT ===== */
 .main-content {
   grid-column: 1 / -1;
 }
 
-/* CATEGORIES */
-
+/* ===== CATEGORIES ===== */
 .categories {
-  grid-column: 1 / -1;
   background-color: var(--dark-navy);
   padding: 56px 0;
 }
@@ -152,6 +150,7 @@ a {
   max-width: 992px;
   margin: 0 auto 32px;
   font-size: 30px;
+  padding: 0 20px;
 }
 
 .categories-grid {
@@ -160,6 +159,7 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
+  padding: 0 20px;
 }
 
 .category-card {
@@ -185,31 +185,18 @@ a {
   font-size: 26px;
 }
 
-.red {
-  background-color: var(--red-accent);
-}
-
-.orange {
-  background-color: var(--orange);
-}
-
-.purple {
-  background-color: var(--purple);
-}
-
-.blue {
-  background-color: var(--light-blue);
-}
+.red    { background-color: var(--red-accent); }
+.orange { background-color: var(--orange); }
+.purple { background-color: var(--purple); }
+.blue   { background-color: var(--light-blue); }
 
 .category-card h3 {
   margin: 0;
   font-size: 22px;
 }
 
-/* TOP PICKS */
-
+/* ===== TOP PICKS ===== */
 .top-picks {
-  grid-column: 1 / -1;
   background-color: var(--dark-blue);
   padding: 56px 0;
 }
@@ -218,6 +205,7 @@ a {
   max-width: 992px;
   margin: 0 auto 32px;
   font-size: 30px;
+  padding: 0 20px;
 }
 
 .picks-grid {
@@ -226,6 +214,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  padding: 0 20px;
 }
 
 .event-card {
@@ -260,10 +249,8 @@ a {
   color: var(--red-accent);
 }
 
-/* STUDENT SPOTS */
-
+/* ===== STUDENT SPOTS ===== */
 .student-spots {
-  grid-column: 1 / -1;
   background-color: var(--dark-navy);
   padding: 56px 0;
 }
@@ -272,6 +259,7 @@ a {
   max-width: 992px;
   margin: 0 auto 32px;
   font-size: 30px;
+  padding: 0 20px;
 }
 
 .spots-grid {
@@ -280,6 +268,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 48px;
+  padding: 0 20px;
 }
 
 .spot-card {
@@ -294,6 +283,7 @@ a {
   width: 160px;
   height: 128px;
   object-fit: cover;
+  flex-shrink: 0;
 }
 
 .spot-info {
@@ -313,8 +303,7 @@ a {
   font-size: 16px;
 }
 
-/* CTA */
-
+/* ===== CTA ===== */
 .cta {
   grid-column: 1 / -1;
   background-color: var(--red-accent);
@@ -348,8 +337,7 @@ a {
   font-weight: bold;
 }
 
-/* FOOTER */
-
+/* ===== FOOTER ===== */
 .footer {
   grid-column: 1 / -1;
   background-color: var(--blue-gray);
@@ -388,16 +376,23 @@ a {
   font-size: 14px;
 }
 
-/* RESPONSIVE */
 
-/* RESPONSIVE */
+/* =================================================
+   MILESTONE 6 ADDITIONS: MEDIA QUERIES
+   ================================================= */
 
-/* Tablet layout: required 992px breakpoint */
+/* -------------------------------------------------
+   TABLET — 992px breakpoint
+   Center column locks to 768px wide
+   ------------------------------------------------- */
 @media (max-width: 992px) {
+
+  /* Collapse outer columns, center content to 768px */
   .page-grid {
     grid-template-columns: minmax(0, 1fr) minmax(0, 768px) minmax(0, 1fr);
   }
 
+  /* Full-width grid children stay full-width */
   .header,
   .hero,
   .main-content,
@@ -406,6 +401,7 @@ a {
     grid-column: 1 / -1;
   }
 
+  /* Inner containers cap at 768px */
   .header-inner,
   .hero-overlay,
   .categories h2,
@@ -421,6 +417,7 @@ a {
     padding-right: 24px;
   }
 
+  /* Header stacks logo and nav vertically */
   .header-inner {
     min-height: auto;
     padding-top: 20px;
@@ -435,12 +432,7 @@ a {
     gap: 24px;
   }
 
-  .hero {
-    background-image:
-      linear-gradient(rgba(15, 52, 96, 0.65), rgba(15, 52, 96, 0.65)),
-      url("https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1200&q=80");
-  }
-
+  /* Hero text centers on tablet */
   .hero-overlay {
     padding-top: 64px;
     padding-bottom: 64px;
@@ -457,27 +449,37 @@ a {
     justify-content: center;
   }
 
+  /* Categories: 4 columns → 2 columns */
   .categories-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* Event cards: 3 columns → 2 columns */
   .picks-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
 
+  /* Spots: stays 2 columns but stacks on narrower tablets */
   .spots-grid {
     grid-template-columns: 1fr;
     gap: 24px;
   }
 
+  /* Footer stays 3 columns at tablet */
   .footer-inner {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Phone layout: required 768px breakpoint */
+
+/* -------------------------------------------------
+   PHONE — 768px breakpoint
+   Center column expands to 100% width
+   ------------------------------------------------- */
 @media (max-width: 768px) {
+
+  /* Disable side columns entirely — full width */
   .page-grid {
     grid-template-columns: 100%;
   }
@@ -490,6 +492,7 @@ a {
     grid-column: 1;
   }
 
+  /* All inner containers go full width */
   .header-inner,
   .hero-overlay,
   .categories h2,
@@ -504,10 +507,12 @@ a {
     padding-right: 20px;
   }
 
+  /* Smaller logo on phone */
   .logo {
-    font-size: 28px;
+    font-size: 26px;
   }
 
+  /* Nav goes vertical on small screens */
   .nav {
     width: 100%;
     flex-direction: column;
@@ -515,12 +520,9 @@ a {
     gap: 12px;
   }
 
+  /* Hero taller on phone to give text room */
   .hero {
     min-height: 420px;
-    background-position: center;
-    background-image:
-      linear-gradient(rgba(15, 52, 96, 0.7), rgba(15, 52, 96, 0.7)),
-      url("https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=900&q=80");
   }
 
   .hero-overlay {
@@ -537,6 +539,7 @@ a {
     font-size: 18px;
   }
 
+  /* Buttons stack vertically on phone */
   .hero-buttons {
     flex-direction: column;
     align-items: stretch;
@@ -546,6 +549,7 @@ a {
     width: 100%;
   }
 
+  /* Reduce section padding on phone */
   .categories,
   .top-picks,
   .student-spots {
@@ -553,6 +557,7 @@ a {
     padding-bottom: 40px;
   }
 
+  /* All section headings smaller on phone */
   .categories h2,
   .top-picks h2,
   .student-spots h2,
@@ -560,6 +565,7 @@ a {
     font-size: 26px;
   }
 
+  /* All grids go single column on phone */
   .categories-grid,
   .picks-grid,
   .spots-grid,
@@ -568,10 +574,7 @@ a {
     gap: 20px;
   }
 
-  .category-card {
-    min-height: 130px;
-  }
-
+  /* Spot cards stack image on top */
   .spot-card {
     flex-direction: column;
   }
@@ -581,6 +584,7 @@ a {
     height: 180px;
   }
 
+  /* CTA adjustments */
   .cta {
     min-height: 220px;
   }

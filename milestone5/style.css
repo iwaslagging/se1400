@@ -1,3 +1,5 @@
+/* ===== MILESTONE 5: HOMEPAGE IMPLEMENTATION ===== */
+
 :root {
   --dark-navy: #1a1a2e;
   --blue-gray: #16213e;
@@ -32,13 +34,13 @@ a {
   color: var(--white);
 }
 
+/* ===== MAIN PAGE GRID ===== */
 .page-grid {
   display: grid;
   grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
 }
 
-/* HEADER */
-
+/* ===== HEADER ===== */
 .header {
   grid-column: 1 / -1;
   background-color: var(--blue-gray);
@@ -64,21 +66,19 @@ a {
 .nav {
   display: flex;
   gap: 40px;
-  flex-wrap: wrap;
 }
 
 .nav a {
   font-size: 16px;
 }
 
-/* HERO */
-
+/* ===== HERO ===== */
 .hero {
   grid-column: 1 / -1;
   min-height: 400px;
   background-image:
     linear-gradient(rgba(15, 52, 96, 0.6), rgba(15, 52, 96, 0.6)),
-    url("https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1600&q=80");
+    url("images/final_se_1400_photo.avif");
   background-size: cover;
   background-position: center;
 }
@@ -112,7 +112,6 @@ a {
 .hero-buttons {
   display: flex;
   gap: 16px;
-  flex-wrap: wrap;
 }
 
 .btn {
@@ -134,16 +133,13 @@ a {
   background-color: transparent;
 }
 
-/* MAIN CONTENT */
-
+/* ===== MAIN CONTENT ===== */
 .main-content {
   grid-column: 1 / -1;
 }
 
-/* CATEGORIES */
-
+/* ===== CATEGORIES ===== */
 .categories {
-  grid-column: 1 / -1;
   background-color: var(--dark-navy);
   padding: 56px 0;
 }
@@ -152,6 +148,7 @@ a {
   max-width: 992px;
   margin: 0 auto 32px;
   font-size: 30px;
+  padding: 0 20px;
 }
 
 .categories-grid {
@@ -160,6 +157,7 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
+  padding: 0 20px;
 }
 
 .category-card {
@@ -185,31 +183,18 @@ a {
   font-size: 26px;
 }
 
-.red {
-  background-color: var(--red-accent);
-}
-
-.orange {
-  background-color: var(--orange);
-}
-
-.purple {
-  background-color: var(--purple);
-}
-
-.blue {
-  background-color: var(--light-blue);
-}
+.red    { background-color: var(--red-accent); }
+.orange { background-color: var(--orange); }
+.purple { background-color: var(--purple); }
+.blue   { background-color: var(--light-blue); }
 
 .category-card h3 {
   margin: 0;
   font-size: 22px;
 }
 
-/* TOP PICKS */
-
+/* ===== TOP PICKS ===== */
 .top-picks {
-  grid-column: 1 / -1;
   background-color: var(--dark-blue);
   padding: 56px 0;
 }
@@ -218,6 +203,7 @@ a {
   max-width: 992px;
   margin: 0 auto 32px;
   font-size: 30px;
+  padding: 0 20px;
 }
 
 .picks-grid {
@@ -226,6 +212,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  padding: 0 20px;
 }
 
 .event-card {
@@ -260,10 +247,8 @@ a {
   color: var(--red-accent);
 }
 
-/* STUDENT SPOTS */
-
+/* ===== STUDENT SPOTS ===== */
 .student-spots {
-  grid-column: 1 / -1;
   background-color: var(--dark-navy);
   padding: 56px 0;
 }
@@ -272,6 +257,7 @@ a {
   max-width: 992px;
   margin: 0 auto 32px;
   font-size: 30px;
+  padding: 0 20px;
 }
 
 .spots-grid {
@@ -280,6 +266,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 48px;
+  padding: 0 20px;
 }
 
 .spot-card {
@@ -294,6 +281,7 @@ a {
   width: 160px;
   height: 128px;
   object-fit: cover;
+  flex-shrink: 0;
 }
 
 .spot-info {
@@ -313,8 +301,7 @@ a {
   font-size: 16px;
 }
 
-/* CTA */
-
+/* ===== CTA ===== */
 .cta {
   grid-column: 1 / -1;
   background-color: var(--red-accent);
@@ -348,8 +335,7 @@ a {
   font-weight: bold;
 }
 
-/* FOOTER */
-
+/* ===== FOOTER ===== */
 .footer {
   grid-column: 1 / -1;
   background-color: var(--blue-gray);
@@ -386,57 +372,4 @@ a {
   text-align: center;
   color: #b8b8b8;
   font-size: 14px;
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 1100px) {
-  .header-inner {
-    padding: 20px 30px;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .hero-overlay {
-    padding: 40px 30px;
-    min-height: 400px;
-  }
-
-  .categories-grid,
-  .picks-grid,
-  .spots-grid,
-  .footer-inner {
-    grid-template-columns: 1fr;
-  }
-
-  .spot-card {
-    flex-direction: column;
-  }
-
-  .spot-card img {
-    width: 100%;
-    height: 180px;
-  }
-}
-
-@media (max-width: 700px) {
-  .hero-content h2 {
-    font-size: 36px;
-  }
-
-  .hero-content p {
-    font-size: 18px;
-  }
-
-  .categories h2,
-  .top-picks h2,
-  .student-spots h2,
-  .cta-content h2 {
-    font-size: 26px;
-  }
-
-  .nav {
-    justify-content: center;
-    gap: 20px;
-  }
 }
