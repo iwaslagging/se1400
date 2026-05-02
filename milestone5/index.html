@@ -1,171 +1,165 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NightQuest | What Should I Do Tonight?</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="page-grid">
+  
 
-    <!-- HEADER -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NightQuest</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+
+
+
+<body>
+<div class="grid-container">
+    
     <header class="header">
-      <div class="header-inner">
         <h1 class="logo">NightQuest</h1>
-        <nav class="nav">
-          <a href="#">Home</a>
-          <a href="#">Events</a>
-          <a href="#">Food &amp; Drinks</a>
-          <a href="#">Hangout Spots</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+
+
+        <nav class="questnav">
+            <ul class="navlinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Events</a></li>
+          <li><a href="index.html">Food & Drinks</a></li>
+          <li><a href="index.html">Hangout Spots</a></li>
+          <li><a href="index.html">About</a></li>
+
+          <li><a href="index.html">Contact</a></li>
+          </ul>
+      
+          
         </nav>
-      </div>
     </header>
 
-    <!-- HERO -->
+    
+    
+    
+    
+    
     <section class="hero">
-      <div class="hero-overlay">
-        <div class="hero-content">
-          <h2>What Should I Do Tonight?</h2>
-          <p>Discover the best nightlife, food, and weekend activities near campus.</p>
-          <div class="hero-buttons">
-            <a class="btn btn-primary" href="#">Explore Events</a>
-            <a class="btn btn-secondary" href="#">See Top Picks</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MAIN CONTENT -->
-    <main class="main-content">
-
-      <!-- CATEGORIES -->
-      <section class="categories">
-        <h2>What Are You Looking For?</h2>
-        <div class="categories-grid">
-
-          <article class="category-card">
-            <div class="icon-circle red">🎉</div>
-            <h3>Events</h3>
-          </article>
-
-          <article class="category-card">
-            <div class="icon-circle orange">🍕</div>
-            <h3>Cheap Eats</h3>
-          </article>
-
-          <article class="category-card">
-            <div class="icon-circle purple">❤️</div>
-            <h3>Date Ideas</h3>
-          </article>
-
-          <article class="category-card">
-            <div class="icon-circle blue">👥</div>
-            <h3>Hangout Spots</h3>
-          </article>
-
-        </div>
-      </section>
-
-      <!-- TOP PICKS -->
-      <section class="top-picks">
-        <h2>This Weekend's Top Picks</h2>
-        <div class="picks-grid">
-
-          <article class="event-card">
-            <img src="images/indie_nigth_live.avif" alt="Live concert with crowd">
-            <div class="event-info">
-              <h3>Indie Night Live</h3>
-              <p>Local bands and student discounts every Friday night at The Venue downtown.</p>
-              <span class="price">$8</span>
+            <h2>What should I do tonight</h2>
+            
+            <p>Discover what to do and cure your boredom</p>
+             <div class="herobuttons">
+                <a class="hero1"> Explore</a>
+                <a class="hero2"> Go top picks</a>
+             </div>   
+        </section>     
+        
+        
+        
+        
+        
+        
+        
+        
+        <section class="categories">
+            <h2>Plan your perfect night</h2>
+        <section class="cardcontainer">
+            <div class="card">
+                <div class="cardcontent">Events🎉</div>
+                
             </div>
-          </article>
 
-          <article class="event-card">
-            <img src="images/food_truck.avif" alt="Food truck lineup at night">
-            <div class="event-info">
-              <h3>Food Truck Friday</h3>
-              <p>Street food festival downtown. Over 15 trucks, free entry, all night long.</p>
-              <span class="price">Free Entry</span>
+            <div class="card">
+                  <div class="cardcontent">Cheap food🍕</div>
+                
             </div>
-          </article>
 
-          <article class="event-card">
-            <img src="images/dj.avif" alt="DJ performing at club">
-            <div class="event-info">
-              <h3>DJ Night @ The Basement</h3>
-              <p>EDM and hip-hop all night. Under-21 welcome until 11pm.</p>
-              <span class="price">$5</span>
+            <div class="card">
+                <div class="cardcontent">Date Nigth❤️</div>
+                
             </div>
-          </article>
 
-        </div>
-      </section>
-
-      <!-- STUDENT SPOTS -->
-      <section class="student-spots">
-        <h2>Popular Student Spots</h2>
-        <div class="spots-grid">
-
-          <article class="spot-card">
-            <img src="images/bar.avif" alt="Bar interior with warm lighting">
-            <div class="spot-info">
-              <h3>The Night Owl Bar</h3>
-              <p>⭐ 4.8 &nbsp;•&nbsp; Open until 2am</p>
+            <div class="card">
+                
+                 <div class="cardcontent">Hangout Spots👥</div>
+                
             </div>
-          </article>
+           
+            
+        
 
-          <article class="spot-card">
-            <img src="images/cafe.avif" alt="Cozy café interior">
-            <div class="spot-info">
-              <h3>Campus Corner Cafe</h3>
-              <p>⭐ 4.6 &nbsp;•&nbsp; Open until midnight</p>
+        </section>
+        </section>
+
+     
+
+        
+        
+        
+        
+        
+        
+        <section class="eventcard">
+            <h2>This Weekend's Top Picks</h2>
+
+            <div class="pickwrapper">
+                <article class="pickcard">
+                    <img src="images/indie_nigth_live.avif">
+                    <h3>indie night</h3>
+                </article>
+                
+                
+                <article class="pickcard">
+                    <img src="images/food_truck.avif">
+                    <h3>food truck</h3>
+                </article>
+                
+                
+                <article class="pickcard">
+                    <img src="images/dj.avif">
+                    <h3>Dj night</h3>
+                </article>
             </div>
-          </article>
+        </section>
 
-        </div>
-      </section>
+        
+        
+        
+        
+        
+        <section class="student">
+            <h2>Best Student Spots</h2>
 
-    </main>
+            <div class="hangoutspot">
+                
+                
+                <article class="hangoutspotcard">
+                    <img src="images/bar.avif">
+                    <div class="info">
+                        <h3>bar</h3>
+                        <p>⭐ 4</p>
+                    </div>
+                </article>
+                
+                
+                
+                <article class="hangoutspotcard">
+                    <img src="images/cafe.avif">
+                    <div class="info">
+                        <h3>cafe</h3>
+                        <p>⭐ 5</p>
+                    </div>
 
-    <!-- CTA BANNER -->
-    <section class="cta">
-      <div class="cta-content">
-        <h2>Ready to Make Tonight Unforgettable?</h2>
-        <p>Find your next favorite spot, event, or late-night plan.</p>
-        <a class="cta-button" href="#">Plan My Night</a>
-      </div>
-    </section>
+                </article>
+            </div>
 
-    <!-- FOOTER -->
+        </section>
+
+     
+
+
     <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-column">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Food &amp; Drinks</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>About</h3>
-          <ul>
-            <li><a href="#">Our Mission</a></li>
-            <li><a href="#">Student Picks</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Follow Us</h3>
-          <p>📱 🐦 📷</p>
-        </div>
-      </div>
-      <p class="copyright">Copyright &copy; 2025 NightQuest</p>
+        <p>&copy; 2026 NightQuest all rights reserved.</p>
     </footer>
 
-  </div>
+ 
+</div>
 </body>
 </html>
