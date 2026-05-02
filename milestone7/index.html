@@ -1,250 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NightQuest | What Should I Do Tonight?</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="page-grid">
+  
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NightQuest</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+
+
+
+<body>
+<div class="grid-container">
+    
     <header class="header">
-      <div class="header-inner">
         <h1 class="logo">NightQuest</h1>
-        <nav class="nav">
-          <a href="index.html" class="active">Home</a>
-          <a href="events.html">Events</a>
-          <a href="food.html">Food &amp; Drinks</a>
-          <a href="spots.html">Hangout Spots</a>
-          <a href="dates.html">Date Ideas</a>
-          <a href="about.html">About</a>
+
+
+        <nav class="questnav">
+            <ul class="navlinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Events</a></li>
+          <li><a href="index.html">Food & Drinks</a></li>
+          <li><a href="index.html">Hangout Spots</a></li>
+          <li><a href="index.html">About</a></li>
+
+          <li><a href="index.html">Contact</a></li>
+          </ul>
+      
+          
         </nav>
-      </div>
     </header>
 
-    <section class="hero" style="background-image: linear-gradient(rgba(15,52,96,0.65),rgba(15,52,96,0.65)), url('images/final_se_1400_photo.avif');">
-      <div class="hero-overlay">
-        <div class="hero-content">
-          <h2>What Should I Do Tonight?</h2>
-          <p>Discover the best nightlife, food, and weekend activities near campus — all in one place.</p>
-          <div class="hero-buttons">
-            <a class="btn btn-primary" href="events.html">Explore Events</a>
-            <a class="btn btn-secondary" href="#quiz">Plan My Night</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <main class="main-content">
-
-      <section class="categories">
-        <h2>What Are You Looking For?</h2>
-        <div class="categories-grid">
-          <a href="events.html">
-            <article class="category-card">
-              <div class="icon-circle red">🎉</div>
-              <h3>Events</h3>
-            </article>
-          </a>
-          <a href="food.html">
-            <article class="category-card">
-              <div class="icon-circle orange">🍕</div>
-              <h3>Cheap Eats</h3>
-            </article>
-          </a>
-          <a href="dates.html">
-            <article class="category-card">
-              <div class="icon-circle purple">❤️</div>
-              <h3>Date Ideas</h3>
-            </article>
-          </a>
-          <a href="spots.html">
-            <article class="category-card">
-              <div class="icon-circle blue">👥</div>
-              <h3>Hangout Spots</h3>
-            </article>
-          </a>
-        </div>
-      </section>
-
-      <section class="top-picks">
-        <h2>This Weekend's Top Picks</h2>
-        <div class="picks-grid">
-          <article class="event-card">
-            <img src="images/indie_nigth_live.avif" alt="Live concert with crowd">
-            <div class="event-info">
-              <h3>Indie Night Live</h3>
-              <p>Local bands, all-ages show, and student discounts every Friday night at The Venue downtown.</p>
-              <div class="event-meta">
-                <span class="price">$8</span>
-                <span class="tag">Live Music</span>
-              </div>
+    
+    
+    
+    
+    
+    <section class="hero">
+            <h2>What should I do tonight</h2>
+            
+            <p>Discover what to do and cure your boredom</p>
+             <div class="herobuttons">
+                <a class="hero1"> Explore</a>
+                <a class="hero2"> Go top picks</a>
+             </div>   
+        </section>     
+        
+        
+        
+        
+        
+        
+        
+        
+        <section class="categories">
+            <h2>Plan your perfect night</h2>
+        <section class="cardcontainer">
+            <div class="card">
+                <div class="cardcontent">Events🎉</div>
+                
             </div>
-          </article>
-          <article class="event-card">
-            <img src="images/food_truck.avif" alt="Food truck lineup at night">
-            <div class="event-info">
-              <h3>Food Truck Friday</h3>
-              <p>Over 15 food trucks gather downtown every Friday evening. Tacos, BBQ, desserts, and more.</p>
-              <div class="event-meta">
-                <span class="price">Free Entry</span>
-                <span class="tag green-tag">Free</span>
-              </div>
+
+            <div class="card">
+                  <div class="cardcontent">Cheap food🍕</div>
+                
             </div>
-          </article>
-          <article class="event-card">
-            <img src="images/dj.avif" alt="DJ performing at club">
-            <div class="event-info">
-              <h3>DJ Night @ The Basement</h3>
-              <p>EDM and hip-hop all night long. 21+ after midnight, under-21 welcome until 11pm.</p>
-              <div class="event-meta">
-                <span class="price">$5</span>
-                <span class="tag blue-tag">Nightlife</span>
-              </div>
+
+            <div class="card">
+                <div class="cardcontent">Date Nigth❤️</div>
+                
             </div>
-          </article>
-        </div>
-      </section>
 
-      <section class="student-spots">
-        <h2>Popular Student Spots</h2>
-        <div class="spots-grid">
-          <article class="spot-card">
-            <img src="images/bar.avif" alt="Bar interior with warm lighting">
-            <div class="spot-info">
-              <h3>The Night Owl Bar</h3>
-              <p>Classic dive bar energy, great prices, trivia on Wednesdays.</p>
-              <p>⭐ 4.8 &nbsp;•&nbsp; $$ &nbsp;•&nbsp; Open until 2am</p>
+            <div class="card">
+                
+                 <div class="cardcontent">Hangout Spots👥</div>
+                
             </div>
-          </article>
-          <article class="spot-card">
-            <img src="images/cafe.avif" alt="Cozy café with students working">
-            <div class="spot-info">
-              <h3>Campus Corner Cafe</h3>
-              <p>Late-night coffee, strong wifi, and a chill vibe for studying or hanging out.</p>
-              <p>⭐ 4.6 &nbsp;•&nbsp; $ &nbsp;•&nbsp; Open until midnight</p>
+           
+            
+        
+
+        </section>
+        </section>
+
+     
+
+        
+        
+        
+        
+        
+        
+        <section class="eventcard">
+            <h2>This Weekend's Top Picks</h2>
+
+            <div class="pickwrapper">
+                <article class="pickcard">
+                    <img src="images/indie_nigth_live.avif">
+                    <h3>indie night</h3>
+                </article>
+                
+                
+                <article class="pickcard">
+                    <img src="images/food_truck.avif">
+                    <h3>food truck</h3>
+                </article>
+                
+                
+                <article class="pickcard">
+                    <img src="images/dj.avif">
+                    <h3>Dj night</h3>
+                </article>
             </div>
-          </article>
-        </div>
-      </section>
+        </section>
 
-    </main>
+        
+        
+        
+        
+        
+        <section class="student">
+            <h2>Best Student Spots</h2>
 
-    <!-- PLAN MY NIGHT QUIZ -->
-    <section class="quiz-section" id="quiz">
-      <div class="quiz-inner">
-        <h2>Plan My Night</h2>
-        <p>Answer 4 quick questions and we'll build the perfect night for you.</p>
+            <div class="hangoutspot">
+                
+                
+                <article class="hangoutspotcard">
+                    <img src="images/bar.avif">
+                    <div class="info">
+                        <h3>bar</h3>
+                        <p>⭐ 4</p>
+                    </div>
+                </article>
+                
+                
+                
+                <article class="hangoutspotcard">
+                    <img src="images/cafe.avif">
+                    <div class="info">
+                        <h3>cafe</h3>
+                        <p>⭐ 5</p>
+                    </div>
 
-        <div class="quiz-progress">
-          <div class="progress-dot" id="dot1"></div>
-          <div class="progress-dot" id="dot2"></div>
-          <div class="progress-dot" id="dot3"></div>
-          <div class="progress-dot" id="dot4"></div>
-        </div>
+                </article>
+            </div>
 
-        <!-- Step 1: Mood -->
-        <div class="quiz-step active" id="step1">
-          <p class="quiz-question">What's your mood tonight?</p>
-          <div class="quiz-options">
-            <button class="quiz-option" data-value="chill"><span class="opt-emoji">😌</span>Chill & Low-Key</button>
-            <button class="quiz-option" data-value="social"><span class="opt-emoji">🎉</span>Social & Lively</button>
-            <button class="quiz-option" data-value="adventurous"><span class="opt-emoji">🔥</span>Adventurous</button>
-            <button class="quiz-option" data-value="romantic"><span class="opt-emoji">💕</span>Romantic</button>
-          </div>
-          <button class="quiz-btn" id="next1" disabled>Next →</button>
-        </div>
+        </section>
 
-        <!-- Step 2: Budget -->
-        <div class="quiz-step" id="step2">
-          <p class="quiz-question">What's your budget looking like?</p>
-          <div class="quiz-options">
-            <button class="quiz-option" data-value="free"><span class="opt-emoji">🆓</span>Free (I'm broke)</button>
-            <button class="quiz-option" data-value="cheap"><span class="opt-emoji">💵</span>Cheap ($1–15)</button>
-            <button class="quiz-option" data-value="moderate"><span class="opt-emoji">💳</span>Moderate ($15–40)</button>
-            <button class="quiz-option" data-value="splurge"><span class="opt-emoji">💸</span>Splurge mode</button>
-          </div>
-          <button class="quiz-btn" id="next2" disabled>Next →</button>
-        </div>
+     
 
-        <!-- Step 3: Group -->
-        <div class="quiz-step" id="step3">
-          <p class="quiz-question">Who are you going with?</p>
-          <div class="quiz-options">
-            <button class="quiz-option" data-value="solo"><span class="opt-emoji">🧍</span>Just me</button>
-            <button class="quiz-option" data-value="date"><span class="opt-emoji">👫</span>A date</button>
-            <button class="quiz-option" data-value="friends"><span class="opt-emoji">👯</span>Friend group</button>
-            <button class="quiz-option" data-value="family"><span class="opt-emoji">👨‍👩‍👧</span>Family</button>
-          </div>
-          <button class="quiz-btn" id="next3" disabled>Next →</button>
-        </div>
-
-        <!-- Step 4: Time -->
-        <div class="quiz-step" id="step4">
-          <p class="quiz-question">When are you heading out?</p>
-          <div class="quiz-options">
-            <button class="quiz-option" data-value="afternoon"><span class="opt-emoji">☀️</span>This afternoon</button>
-            <button class="quiz-option" data-value="evening"><span class="opt-emoji">🌇</span>Early evening</button>
-            <button class="quiz-option" data-value="night"><span class="opt-emoji">🌙</span>Late night</button>
-            <button class="quiz-option" data-value="flexible"><span class="opt-emoji">🕐</span>Flexible</button>
-          </div>
-          <button class="quiz-btn" id="next4" disabled>Get My Plan →</button>
-        </div>
-
-        <!-- Result -->
-        <div class="quiz-result" id="quizResult">
-          <div class="result-title" id="resultTitle">Your Perfect Night</div>
-          <p class="result-subtitle" id="resultSubtitle">Based on your vibe, here's what we recommend:</p>
-          <div class="result-cards" id="resultCards"></div>
-          <button class="quiz-reset" id="quizReset">↺ Try Again</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="cta-content">
-        <h2>Ready to Make Tonight Unforgettable?</h2>
-        <p>Browse all events, food, and spots curated for students.</p>
-        <a class="cta-button" href="events.html">Find Something Fun</a>
-      </div>
-    </section>
 
     <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-column">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="food.html">Food &amp; Drinks</a></li>
-            <li><a href="spots.html">Hangout Spots</a></li>
-            <li><a href="dates.html">Date Ideas</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>About</h3>
-          <ul>
-            <li><a href="about.html">Our Mission</a></li>
-            <li><a href="about.html#contact">Contact Us</a></li>
-            <li><a href="about.html#suggest">Suggest a Spot</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Follow Us</h3>
-          <p>Stay updated with the latest events, new spots, and weekly picks from the NightQuest team.</p>
-          <div class="social-links">
-            <a href="#" title="Instagram">📷</a>
-            <a href="#" title="TikTok">🎵</a>
-            <a href="#" title="Twitter/X">🐦</a>
-          </div>
-        </div>
-      </div>
-      <p class="copyright">Copyright &copy; 2025 NightQuest &mdash; Made for students, by students.</p>
+        <p>&copy; 2026 NightQuest all rights reserved.</p>
     </footer>
 
-  </div>
-
-  <script src="script.js"></script>
+ 
+</div>
 </body>
 </html>
